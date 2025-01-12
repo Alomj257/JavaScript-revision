@@ -14,6 +14,10 @@ for(let i of heros){
     console.log(i);
 }
 
+for(let hero in heros){
+    console.log(heros[hero])
+}
+
 // Using for loop in js
 for(let i=0; i<heros.length; i++){
     console.log(heros[i]);
@@ -40,6 +44,9 @@ console.log(size)
 
 // loops in string 
 let str = "I am jahangir Alom";
+
+console.log(str)
+console.log(str.charAt(2))
 
 for(let i of str){
     console.log(i);
