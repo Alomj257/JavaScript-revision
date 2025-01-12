@@ -28,7 +28,7 @@ while(i<=100){
 let gameNumber = 25;
 let userInput = parseFloat(prompt("Enter guessing number"));
 
-while(userInput !== gameNumber){
+while(userInput != gameNumber){
    userInput = parseFloat(prompt("You entered wrong number... please enter correct number"));
 }
 console.log("Congratulations you entered right number")

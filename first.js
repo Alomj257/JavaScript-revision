@@ -1,13 +1,26 @@
-// for-in loops
-// For objects 
+// String in js
+// 1. Create string
 
-const student = {
-    name: "Jahangir",
-    age: 27,
-    cgpa: 8.7,
-    isPass: true
+let str = "Jahangir Alom";
+console.log(str);
+console.log(str.length); // String size
+console.log(str[2]);
+
+let str2 = 'Aasia Bano';
+console.log(str2); 
+console.log(str2.length); // String size
+
+// Template literals
+// A way to have embeded expressions in strings
+
+let age = 27;
+let str3 = `Hello i am jahangir and my age is ${age}`;
+console.log(str3);
+console.log(typeof str3)
+
+let obj = {
+    item : 'Pen',
+    price : 10
 }
-for(let key in student){
-    console.log(key);
-    console.log(student[key])
-}
+
+console.log(`The cost of ${obj.item} is rs ${obj.price}`)
