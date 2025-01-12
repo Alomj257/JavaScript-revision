@@ -1,0 +1,139 @@
+// Comments in js
+
+// This is a single line comment
+
+/* This is multi line
+comment. */
+
+// This code prints hello world
+console.log("Hello World");
+
+/* This is a code that prints
+hello world in our console window */
+console.log("Hello World");
+
+
+// Operators and Conditional statement
+
+// 1. Arithmatic operators
+
+let a = 5;
+let b = 3;
+let c = a + b;
+console.log("a + b = ", a + b);
+console.log(c);
+console.log(a-b);
+console.log(a*b);
+console.log(a/b);
+
+console.log(a%b);
+console.log(a**b);
+console.log(c);
+
+// Unary operators
+
+let x = 10;
+x++;
+x = x + 1;
+console.log(x);
+
+x--;
+x = x-1;
+console.log(x)
+
+
+// 2. Assignment operator
+// =, +=, -=, *=, %=, **=
+
+let a =5;
+let b = 2;
+a += 4;
+a -= 4;
+a *= 4;
+a /= 4;
+a **= 4;
+a %= 4;
+console.log("a = ", a);
+
+// 3. Comparision operators
+
+let a= 5;
+let b = 3;
+
+console.log( a ==b);
+console.log(a === b);
+
+console.log( a !=b);
+console.log(a !==b);
+
+let x= 5;
+let y = "5";
+
+console.log( x ==y);
+console.log(x === y);
+
+console.log( x !=y);
+console.log(x !==y);
+
+
+// 4. Logical operators
+let a =6;
+let b =5;
+
+let cond1 = a>b; //True
+let cond2 = a===5; // False
+
+console.log( cond1 && cond2); //False
+console.log(cond1 || cond2); // True
+console.log(!a>b) //False
+
+
+// 5. Conditional statement
+
+let mode = 'bright';
+let color;
+if( mode === 'dark-mode'){
+    color = 'black';
+}else{
+    color = 'white'
+}
+console.log(color);
+
+let age = 10;
+if(age > 18){
+    console.log("You can vote");
+}
+if( age < 18){
+    console.log("You can not vote");
+}
+
+let a = 21;
+if ( a % 2 === 0){
+    console.log("Even");
+}else{
+    console.log("Odd");
+}
+
+// 6. Ternary operator
+
+let age = 19;
+
+let result = age > 18 ? "Adult" : "Not Adult";
+console.log(result);
+
+
+// 6. Switch statement
+
+let age = 28;
+
+switch (age) {
+    case 18:
+        console.log("ok");
+        break;
+    case 20:
+        console.log("Not Ok");
+        break;
+    default:
+        console.log('Hello');
+        break;
+}

@@ -1,0 +1,64 @@
+// Primitive data types in js (7)
+
+let age = 25;
+let price = 199.99;
+
+let fullName = "Jahangir Alom";
+let isFollow = true;
+
+let x;
+let y = null;
+
+let z = BigInt(123);
+
+let a = Symbol("Hello!")
+
+// Non primitive data types in js (Objects)
+
+const student = {
+    fullName: "Aasia Bano",
+    age: 24,
+    cgpa: 8.1,
+    isPass: true
+};
+student["age"] = student["age"] +1;
+student["fullName"] = "Jahangir Alom"
+console.log(student);
+console.log(student.age);
+console.log(student["age"]);
+
+// Practice problem 1
+
+const product = {
+    productName: "Parker Jotter Standard CT Ball Pen (Black)",
+    rating: 4.2,
+    isDeal: true,
+    price: 270,
+    offer: 5
+};
+
+product["productName"] = "Black pen";
+product["price"] = 350;
+
+console.log(product);
+console.log(product.productName);
+console.log(product.isDeal);
+console.log(product["price"]);
+
+console.log(typeof product)
+
+// Practice Problem 2
+
+const profile = {
+    profileId : "Alomj257",
+    isFollow: true,
+    post: 195,
+    followers: "569K",
+    followings: 4,
+    fullName: 'Jahangir Alom',
+    bio: "I am jahangir alom a full stack developer"
+};
+
+console.log(profile);
+console.log(typeof profile.profileId);
+console.log(typeof profile["profileId"]);

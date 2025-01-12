@@ -1,0 +1,73 @@
+// Loops in Js
+// Loops are use to execute a peice of code again and again
+// for loop
+
+for(let i=0; i<10; i++){
+    console.log('Alom')
+}
+console.log('Loop has ended');
+
+//To calculate the sum of n
+
+let n = parseFloat(prompt('Enter a number'));
+let sum=0;
+for(let i=1; i<=n; i++){
+    sum = sum+i;
+}
+console.log(sum)
+
+// While loop
+
+let n = parseFloat(prompt("Enter anumber"));
+let sum =0;
+let i =1;
+while(i<=n){
+    sum = sum +i;
+    i++;
+}
+console.log(sum);
+
+// do while loop
+
+let n = parseFloat(prompt("Enter your number"));
+
+let sum =0;
+let i =1;
+do{
+    sum = sum +i;
+    i++;
+}while(i<=n);
+console.log(sum)
+
+// for-of loops
+// For string and array
+
+let str = "JahangirAlom";
+let size=0;
+for(let i of str){ // iterator -> character
+    size ++;
+    console.log(i)
+}
+console.log(size);
+
+let arr = ["Jahangir", "Alom", "Aasia"];
+let length=0;
+for(let i of arr){ // iterator -> character
+    length ++;
+    console.log(i)
+}
+console.log(length);
+
+// for-in loops
+// For objects 
+
+const student = {
+    name: "Jahangir",
+    age: 27,
+    cgpa: 8.7,
+    isPass: true
+}
+for(let key in student){
+    console.log(key);
+    console.log(student[key])
+}

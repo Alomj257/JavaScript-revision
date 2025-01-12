@@ -1,0 +1,47 @@
+// Var can be re-decleared and update, A global Scope variable;
+
+var age = 24;
+var age = 58;
+var age = 86;
+
+console.log(age);
+
+
+// Let can not be re-decleared but can be updated, A block scope variable;
+
+//Not Possible
+let age = 24;
+let age = 58;
+let age = 86;
+
+console.log(age);
+
+//Possible
+{
+    let a = 5;
+    a = 8;
+    console.log(a);
+}
+{
+    let a = 10;
+    console.log(a);
+}
+
+// Const can not be re-decleared or updateed. A block scoped variable;
+//Not Possible
+const age = 24;
+const age = 58;
+const age = 86;
+
+console.log(age);
+
+//Possible
+{
+    const a = 5;
+    a = 8; // Not possible
+    console.log(a);
+}
+{
+    const a = 10;
+    console.log(a);
+}
