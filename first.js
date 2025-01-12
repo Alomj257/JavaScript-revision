@@ -1,57 +1,50 @@
-// Arrays in js
-// Collection of items in contigious memory allocation.
+// Methods in array
 
-let heros = ["Jahangir", "ironman", "hulk", "thor"];
-console.log(heros);
-console.log(heros.length);
-
-let marks = [91, 92, 96, 78, 85];
-console.log(marks);
-console.log(typeof marks)
-
-// Special loops in js
-for(let i of heros){
-    console.log(i);
-}
-
-for(let hero in heros){
-    console.log(heros[hero])
-}
-
-// Using for loop in js
-for(let i=0; i<heros.length; i++){
-    console.log(heros[i]);
-}
+let arr = [98, 96, 67, 78, 48];
 
 
-// Object in js
-let student = {
-    student1 : 92,
-    student2 : 86,
-    student3: 81,
-    student4: 98,
-    student5: 87
-}
+// Add items to array
+console.log(arr);
+arr.push(45, 49);
+console.log(arr);
+
+// Delete items from array
+let deletedValue = arr.pop();
+console.log(deletedValue);
+console.log(arr);
+
+// Conver array to sting
+let str = arr.toString();
+console.log(str);
+
+// concat
+let arr1 = [20, 30, 40];
+let arr2 = ["Jahangire", "Aasia", "Alom"];
+let result = arr1.concat(arr2);
+console.log(result);
+console.log(arr1.concat(arr2));
+
+// unshift : add to first
+let items = [1,2,3,5,5];
+items.unshift(10);
+console.log(items);
+
+// shift : delete from the first
+let names = ["Kolkata", "Delhi", "Mumbai"];
+names.shift();
+console.log(names);
+
+// slice : returns peice of array;
+let students = ["Aasia", "Jahangir", "Tahmid"];
+let student = students.slice(0,2);
 console.log(student);
-let size = 0;
-for(let key in student){
-    console.log(key);
-    console.log(student[key])
-    size = size +1;
-}
-console.log(size)
 
+// splice : change origianl array (add, remove, replace);
 
-// loops in string 
-let str = "I am jahangir Alom";
+let a = [1,2,3,4,5,6,7];
+a.splice(2,0, 101,102)
+console.log(a)
 
-console.log(str)
-console.log(str.charAt(2))
-
-for(let i of str){
-    console.log(i);
-}
-
-for(let i =0; i<str.length; i++){
-    console.log(str.charAt(i));
-}
+// delete
+a.splice(3,1)
+console.log(a);
