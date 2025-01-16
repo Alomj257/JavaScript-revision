@@ -1,33 +1,38 @@
-// Function and method in js
+// Arrow functions
+// Compact way of writing a function
 
-// 1st function
+// 1st arrow fun
 
-//Funcyion define
-function myFunction(){
-    console.log("Hi!... I am jahangir");
-    console.log("We are learning js")
-};
+// Normal function
 
-// Function call
-myFunction();
-
-// 2nd function
-
-function mySecFunction(msg, n){ // Parameter -> input
-    console.log(msg);
-    console.log(msg*n); // NaN
-    console.log(`${msg} and my marks in js ${n}`);
+function sum(a,b){
+    return a+b;
 }
 
-mySecFunction("I love js", 100); // Argument
+let result = sum(10,20);
+console.log(result)
 
-//3rd function
-function Add(x, y){ // x and y parameter
-    sum = x+y;
-    console.log("Before return");
-    return sum;
-    console.log("After return"); // Not execuatable
+// Arrow function
+const arrowSum = (a,b) => {
+    return a+b;
 }
 
-let result = Add(100,200);
-console.log(result);
+let ans = arrowSum(2,5);
+console.log(ans);
+
+const multi = (x,y) => {
+    return x*y;
+}
+let multiply = multi(5,23);
+console.log(multiply)
+
+
+// To print something
+
+const print = () => {
+    console.log("Hello");
+}
+print();
+
+const res = () => console.log("Hello india!....")
+res();
