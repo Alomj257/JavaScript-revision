@@ -22,7 +22,7 @@ function mySecFunction(msg, n){ // Parameter -> input
 mySecFunction("I love js", 100); // Argument
 
 //3rd function
-function Add(x, y){
+function Add(x, y){ // x and y parameter
     sum = x+y;
     console.log("Before return");
     return sum;
