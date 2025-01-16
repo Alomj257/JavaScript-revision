@@ -1,38 +1,13 @@
-// Arrow functions
-// Compact way of writing a function
+// forEcah loops in array
 
-// 1st arrow fun
+let arr = [1,2,3,4,5]
 
-// Normal function
+arr.forEach((val) => {
+    console.log(val);
+})
 
-function sum(a,b){
-    return a+b;
-}
+let city = ["Karimganj", "Kolkata", "Mumbai"];
 
-let result = sum(10,20);
-console.log(result)
-
-// Arrow function
-const arrowSum = (a,b) => {
-    return a+b;
-}
-
-let ans = arrowSum(2,5);
-console.log(ans);
-
-const multi = (x,y) => {
-    return x*y;
-}
-let multiply = multi(5,23);
-console.log(multiply)
-
-
-// To print something
-
-const print = () => {
-    console.log("Hello");
-}
-print();
-
-const res = () => console.log("Hello india!....")
-res();
+city.forEach((val, idx, arr) => {
+    console.log(val.toUpperCase(), idx, arr);
+})
