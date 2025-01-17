@@ -1,7 +1,10 @@
-#box {
-    height: 250px;
-    width: 250px;
-    background-color: darkblue;
-    color: white;
-    border: 1px solid black;
+.para {
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.newClass {
+    background-color: green;
 }

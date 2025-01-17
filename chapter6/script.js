@@ -1,7 +1,4 @@
-let newBtn = document.createElement("button");
-newBtn.innerText = "Click me";
-newBtn.style.backgroundColor = "red";
-newBtn.style.color = "white";
+let para = document.querySelector("p");
 
-let body = document.querySelector("body");
-body.prepend(newBtn);
+// para.setAttribute("class", "newClass"); // override and changes the class name
+para.classList.add("newClass"); // Using class list
