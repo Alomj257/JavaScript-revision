@@ -1,24 +1,26 @@
-// get attribute value
+// Insert element
 
-let div = document.querySelector("div");
-console.dir(div);
+let newHeading = document.createElement("h1");
+newHeading.innerHTML = "<i>Hi, i am jahangir </i>";
+let body = document.querySelector("body");
+body.prepend(newHeading);
 
-let id = div.getAttribute("id");
-console.log(id);
+// Delete element
+let para = document.querySelector('p');
+para.remove();
 
-let para = document.querySelector("p");
-console.dir(para);
+// let newBtn = document.createElement("button");
+// newBtn.innerText = "Click me";
 
-let className = para.getAttribute("class");
-console.log(className)
+// console.log(newBtn)
+// console.log(newBtn.innerText);
 
-//set attribute value
+// let div = document.querySelector("div");
+// div.append(newBtn);
+// // div.prepend(newBtn)
 
-para.setAttribute("class", "123");
+// div.before(newBtn)
 
-// Acess style
-let box = document.querySelector("#box");
-console.log(div.style)
-div.style.backgroundColor = "red";
-div.style.fontSize = "20px"
-div.innerText = "Hello india"
+// let para = document.querySelector("p");
+// para.after(newBtn)
+
