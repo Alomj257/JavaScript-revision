@@ -1,12 +1,11 @@
-let h2 = document.querySelector("h2");
-h2.innerText = h2.innerText + " from Jahangir Alom";  //Concatenate
+let div = document.querySelector("div");
+console.dir(div);
 
+let id = div.getAttribute("id");
+console.log(id);
 
-let div = document.querySelectorAll(".box");
+let para = document.querySelector("p");
+console.dir(para);
 
-let index =0;
-for(let d of div){
-    console.log(d.innerText)
-    d.innerText = `new unique value ${index}`;
-    index ++;
-}
+let className = para.getAttribute("class");
+console.log(className)
