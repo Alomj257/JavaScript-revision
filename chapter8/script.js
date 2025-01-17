@@ -1,5 +1,6 @@
 let btn1 = document.querySelector("#btn1");
-btn1.onclick = () => {
+btn1.onclick = (e) => {
+    console.log(e.target)
     console.log("Btn 1 was clicked");
     let a = 20;
     let b = 30;
