@@ -221,3 +221,30 @@
 // }else{
 //     console.log("Number is not divisible by 3 and 7")
 // }
+
+
+
+// Add Last 3 Characters to Front and Back of String
+
+// let str = "Jahangir";
+// let str1 = str.slice(0,3);
+// let newString = str1.concat(str).concat(str1);
+// console.log(newString);
+
+
+// Check if String Starts with 'Java' 
+
+// const findJava = (str) => {
+//     let str1 = str.slice(0, 4);
+
+//     // if (str1 === "Java") {
+//     //     return true;
+//     // } else {
+//     //     return false
+//     // }
+
+//     return str1 === "Java"? true: false;
+// }
+
+// let result = findJava("JahaAasia");
+// console.log(result)
