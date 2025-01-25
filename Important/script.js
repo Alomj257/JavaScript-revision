@@ -56,3 +56,36 @@
 
 // let area = Math.sqrt(s * (s-a)*(s-b)*(s-c));
 // console.log(area)
+
+
+
+// Change the string
+
+// let str = prompt("Enter a single word");
+// let str = "Jahangir";
+// let str2 = "";
+
+// for(let i = str.length-1; i>=0; i --){
+//     str2 = str2 + str[i];
+// }
+// console.log(str2)
+
+
+// Leap Year
+
+// function leapYear(year){
+//     return (year % 100 === 0 ? year % 400 === 0 : year % 4 === 0);
+// }
+// console.log(leapYear(2017))
+
+
+// Random gussing number
+
+let number = parseFloat(prompt("Enter number to guess"));
+let n = 10;
+
+if(number === n){
+    alert("Good! Matched");
+}else{
+    alert("Not matched")
+}
