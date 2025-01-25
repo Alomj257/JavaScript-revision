@@ -144,15 +144,80 @@
 // console.log(diff)
 
 
-// SUM OF TWO NUMBER
+// SUM OF TWO NUMBER, IF THE TWO NUMBER ARE SAME THEN RETURN 3 TIME OF THE SUM
 
-const Add = (a,b) => {
-    if(a === b){
-        return (a+b)*3;
-    }else{
-        return a+b;
-    }
-}
+// const Add = (a,b) => {
+//     if(a === b){
+//         return (a+b)*3;
+//     }else{
+//         return a+b;
+//     }
+// }
 
-let sum = Add(10,10);
-console.log(sum)
+// let sum = Add(10,10);
+// console.log(sum)
+
+
+// Difference Between Number and 19 (Triple if >19)
+
+// const diff = (a) => {
+//     let n =19;
+//     if(a>19){
+//         return (a-n)*3;
+//     }else{
+//         return n-a
+//     }
+// }
+
+// let result = diff(32);
+// console.log(result)
+
+
+
+// Remove the character from string
+
+// let str = "Jahangir";
+// let str1 = str.slice(0,2);
+// let str2 = str.slice(3,str.length)
+// console.log(str1.concat(str2))
+
+
+//Swap First and Last Characters in String
+
+// let str = "Bano";
+
+// let midString = str.slice(1, str.length-1);
+// let newString = str.charAt(str.length-1).concat(midString).concat(str.charAt(0));
+// console.log(newString)
+
+
+
+//24. Add First Character to Front and Back of String
+
+// let str = "Jahangir";
+// let fC = str.charAt(0);
+
+// let newString = fC.concat(str).concat(fC);
+// console.log(newString)
+
+
+// function addCharToString(str){
+//     let fc = str.charAt(0);
+//     let newString = fc.concat(str).concat(fc);
+//     return newString;
+// }
+
+// console.log(addCharToString("Alom"))
+
+
+
+//Check if Number is Multiple of 3 or 7
+
+
+// let n = parseFloat(prompt("Enter the number"));
+
+// if (n % 3 === 0 && n%7 === 0){
+//     console.log("Number is divisble by 3 and 7")
+// }else{
+//     console.log("Number is not divisible by 3 and 7")
+// }
