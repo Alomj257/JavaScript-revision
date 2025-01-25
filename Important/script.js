@@ -81,11 +81,78 @@
 
 // Random gussing number
 
-let number = parseFloat(prompt("Enter number to guess"));
-let n = 10;
+// let number = parseFloat(prompt("Enter number to guess"));
+// let n = 10;
 
-if(number === n){
-    alert("Good! Matched");
-}else{
-    alert("Not matched")
+// if(number === n){
+//     alert("Good! Matched");
+// }else{
+//     alert("Not matched")
+// }
+
+
+
+// Multiple and divison
+
+// function divi(a,b){
+//     return a/b;
+// }
+// const multi = (a,b) => {
+//     return a*b;
+// }
+
+// console.log(multi(2,3));
+// console.log(divi(20,4));
+
+
+
+// Degree to F
+
+// const cTF = (c) => {
+//     let f = (c/5)*9 +32;
+//     console.log(`the conversion ${c} to ferhenhite is ${f}`)
+// }
+
+// const fTC = (f) => {
+//     let c = ((f-32)/9)*5;
+//     console.log(`the conversion ${f} to celcious is ${c}`);
+// }
+
+// fTC(45);
+// cTF(60);
+
+
+
+//get url
+// alert(document.URL)
+
+
+
+// DIFFERENCE BETWEEN NUMBER AND THE 13, IF THE NUMBER IS GREATER THEN 13 THEN RETURN THE DOUBLR OF THE DIFFERENCE
+
+// let number = parseFloat(prompt("Enter a number"));
+
+// let num = 13;
+// let diff;
+
+// if(number >13){
+//     diff = 2*(number-num);
+// }else{
+//     diff = number - num;
+// }
+
+// console.log(diff)
+
+
+// SUM OF TWO NUMBER
+
+const Add = (a,b) => {
+    if(a === b){
+        return (a+b)*3;
+    }else{
+        return a+b;
+    }
 }
+
+let sum = Add(10,10);
+console.log(sum)
