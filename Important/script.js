@@ -248,3 +248,15 @@
 
 // let result = findJava("JahaAasia");
 // console.log(result)
+
+
+// Practice 
+let str = "Aasia Bano jahangir"
+let strf = str.slice(0,str.length-4)
+let str1 = str.slice(str.length-4,str.length);
+let str2 = "";
+for(let i = str1.length-1; i>=0; i--){
+    str2 = str2 + str1.charAt(i)
+}
+let result = str2.concat(strf);
+console.log(result)
