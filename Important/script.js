@@ -415,10 +415,26 @@
 // console.log(newSting)
 
 
-const sortString = (str) => {
-    let strArr = str.split("");
-    return strArr.sort().join("");
+// const sortString = (str) => {
+//     let strArr = str.split("");
+//     return strArr.sort().join("");
+// }
+
+// let result = sortString("jahangir");
+// console.log(result)
+
+
+// 54. Count Vowels in String
+
+const countVowels = (str) => {
+    let count = 0;
+    for(i of str){
+        if(i === "a" || i === "e" || i === "i" || i === "o" || i === "u" || i === "A" || i === "E" || i === "I" || i === "O" || i === "U"){
+            count ++;
+        }
+    }
+    return count;
 }
 
-let result = sortString("jahangir");
+let result = countVowels("Aasia");
 console.log(result)
