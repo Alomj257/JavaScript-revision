@@ -409,7 +409,16 @@
 
 // Sort Letters Alphabetically in String
 
-let string = "jahangir";
-let strArr = string.split("");
-let newSting = strArr.sort().join("")
-console.log(newSting)
+// let string = "jahangir";
+// let strArr = string.split("");
+// let newSting = strArr.sort().join("")
+// console.log(newSting)
+
+
+const sortString = (str) => {
+    let strArr = str.split("");
+    return strArr.sort().join("");
+}
+
+let result = sortString("jahangir");
+console.log(result)
