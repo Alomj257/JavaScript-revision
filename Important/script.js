@@ -265,18 +265,45 @@
 
 //Check a given string contains 2 to 4 numbers of a specified character
 
-function findChar(str, s) {
-    let count = 0;
-    for (let i = 0; i < str.length; i++) {
-        if (str.charAt(i) === s) {
-            count++;
-        }
-    }
-    return count >= 2 && count <= 4;
-}
+// function findChar(str, s) {
+//     let count = 0;
+//     for (let i = 0; i < str.length; i++) {
+//         if (str.charAt(i) === s) {
+//             count++;
+//         }
+//     }
+//     return count >= 2 && count <= 4;
+// }
 
-let result = findChar("IamJahangir", "a");
-console.log(result);
+// let result = findChar("IamJahangir", "a");
+// console.log(result);
 
-let result1 = findChar("imihdhjf", "y");
-console.log(result1);
+// let result1 = findChar("imihdhjf", "y");
+// console.log(result1);
+
+
+
+// Modify String Based on Length (First 3 Lowercase/Uppercase)
+
+// const modiString = (str) => {
+//     let newString = str.slice(0,3);
+//     let endString = str.slice(3, str.length);
+//     let capNewString = newString.toUpperCase();
+//     let result = capNewString.concat(endString);
+//     return result;
+// }
+
+// let result = modiString("aasia")
+// console.log(result)
+
+
+// let str = "Jahangir";
+// let newString = "";
+// for(let i =0; i<str.length; i++){
+//     if(i>=0 && i<3){
+//         newString = newString + str.charAt(i).toUpperCase();
+//     }else{
+//         newString = newString + str.charAt(i);
+//     }
+// }
+// console.log(newString)
