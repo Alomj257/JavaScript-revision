@@ -458,12 +458,24 @@
 
 // 58. Four Copies of Last 3 Characters
 
-function fourCopy (str){
-    let newString = "";
-    let lastSub = str.slice(str.length-3, str.length);
-    newString = lastSub + lastSub +lastSub+ lastSub;
-    return newString;
-}
+// function fourCopy (str){
+//     let newString = "";
+//     let lastSub = str.slice(str.length-3, str.length);
+//     newString = lastSub + lastSub +lastSub+ lastSub;
+//     return newString;
+// }
 
-let result = fourCopy("Alom")
-console.log(result)
+// let result = fourCopy("Alom")
+// console.log(result)
+
+// 59. Extract First Half of Even-Length String
+
+let string = "Jahangir";
+let len = string.length;
+let newSting = "";
+if(len % 2 === 0){
+    newSting = string.slice(0,string.length/2)
+}else{
+    newSting;
+}
+console.log(newSting)
