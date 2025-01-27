@@ -426,15 +426,22 @@
 
 // 54. Count Vowels in String
 
-const countVowels = (str) => {
-    let count = 0;
-    for(i of str){
-        if(i === "a" || i === "e" || i === "i" || i === "o" || i === "u" || i === "A" || i === "E" || i === "I" || i === "O" || i === "U"){
-            count ++;
-        }
-    }
-    return count;
-}
+// const countVowels = (str) => {
+//     let count = 0;
+//     for(i of str){
+//         if(i === "a" || i === "e" || i === "i" || i === "o" || i === "u" || i === "A" || i === "E" || i === "I" || i === "O" || i === "U"){
+//             count ++;
+//         }
+//     }
+//     return count;
+// }
 
-let result = countVowels("Aasia");
-console.log(result)
+// let result = countVowels("Aasia");
+// console.log(result)
+
+
+// Replace charater from string
+
+let str = "Jahaingir";
+let newSting = str.replace("i", "K");
+console.log(newSting)
