@@ -369,3 +369,39 @@
 
 // let result = revString("I am jahangir Alom");
 // console.log(result);
+
+
+// 50. Capitalize First Letter of Each Word in String
+
+// let str = "jahangir";
+// let str1 = "";
+// for(let i =0 ; i<str.length; i++){
+//     if(i === 0){
+//         str1 = str1 + str.charAt(0).toUpperCase();
+//     }else{
+//         str1 = str1 + str.charAt(i);
+//     }
+// }
+
+// console.log(str1);
+
+// let str = "i am jahangir alom aasia's husband";
+// let strArr = str.split(" ");
+
+// for(let i =0 ; i<strArr.length; i++){
+//     strArr[i] = strArr[i][0].toUpperCase() + strArr[i].substring(1);
+// }
+// let newString = strArr.join(" ");
+// console.log(newString);
+
+
+// const capFirst = (str) => {
+//     let strArr = str.split(" ");
+//     for(let i =0; i<strArr.length ; i++){
+//         strArr[i] = strArr[i][0].toUpperCase() + strArr[i].slice(1);
+//     }
+//     return strArr.join(" ")
+// }
+
+// let result = capFirst("i am jahangir alom");
+// console.log(result)
