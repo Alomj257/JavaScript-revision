@@ -470,12 +470,19 @@
 
 // 59. Extract First Half of Even-Length String
 
-let string = "Jahangir";
-let len = string.length;
-let newSting = "";
-if(len % 2 === 0){
-    newSting = string.slice(0,string.length/2)
-}else{
-    newSting;
-}
+// let string = "Jahangir";
+// let len = string.length;
+// let newSting = "";
+// if(len % 2 === 0){
+//     newSting = string.slice(0,string.length/2)
+// }else{
+//     newSting;
+// }
+// console.log(newSting)
+
+
+// Remove First and Last Characters in String
+
+let str = "Jahangir";
+let newSting = str.slice(1,str.length-1);
 console.log(newSting)
