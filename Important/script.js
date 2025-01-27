@@ -490,8 +490,17 @@
 
 // 61. Concatenate Two Strings Without First Character
 
-let str1 = "Jahangir";
-let str2 = "Aasia";
+// let str1 = "Jahangir";
+// let str2 = "Aasia";
 
-let result = str1.slice(1,str1.length).concat(str2.slice(1,str2.length));
+// let result = str1.slice(1,str1.length).concat(str2.slice(1,str2.length));
+// console.log(result);
+
+
+// 62. Move Last 3 Characters to Start of String
+
+let str = "Jahangir";
+let lastStr = str.slice(str.length-3, str.length);
+let firstStr = str.slice(0,str.length-3);
+let result = lastStr.concat(firstStr);
 console.log(result);
