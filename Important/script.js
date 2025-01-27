@@ -307,3 +307,50 @@
 //     }
 // }
 // console.log(newString)
+
+
+// Sum Two Integers and Return Based on Range
+// Write a JavaScript program to compute the sum of the two given integers. If the sum is in the range 50..80 return 65 otherwise return 80. 
+
+// const Add = (a,b) => {
+//     let sum = a+b;
+//     if(sum >40 && sum <80){
+//         return 65;
+//     }else{
+//         return 80;
+//     }
+// }
+
+// let result = Add(40,45);
+// console.log(result);
+// let result1 = Add(45,23)
+// console.log(result1);
+
+
+
+// 40. Check if Integer is 8 or Difference/Sum Equals 8
+// Write a JavaScript program to check from two given integers whether one of them is 8 or their sum or difference is 8.  
+
+
+// function condiTwo(a,b){
+//     if(a === 8 || b === 8){
+//         return true;
+//     }else{
+//         if(a>b){
+//             if((a-b) === 8){
+//                 return true
+//             }else{
+//                 return false
+//             }
+//         }else{
+//             if((b-a) === 8){
+//                 return true
+//             }else{
+//                 return false
+//             }
+//         }
+//     }
+// }
+
+// let result = condiTwo(30,38);
+// console.log(result)
