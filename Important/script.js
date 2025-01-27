@@ -442,6 +442,15 @@
 
 // Replace charater from string
 
-let str = "Jahaingir";
-let newSting = str.replace("i", "K");
-console.log(newSting)
+// let str = "Jahaingir";
+// let newSting = str.replace("i", "K");
+// console.log(newSting)
+
+
+const replaceChar = (str) => {
+    let newSting = str.replace(/[$,&,*]/g, ",");
+    return newSting;
+}
+
+let result = replaceChar("jaha$g&i*r");
+console.log(result)
