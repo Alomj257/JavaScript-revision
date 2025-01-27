@@ -447,10 +447,23 @@
 // console.log(newSting)
 
 
-const replaceChar = (str) => {
-    let newSting = str.replace(/[$,&,*]/g, ",");
-    return newSting;
+// const replaceChar = (str) => {
+//     let newSting = str.replace(/[$,&,*]/g, ",");
+//     return newSting;
+// }
+
+// let result = replaceChar("jaha$g&i*r");
+// console.log(result)
+
+
+// 58. Four Copies of Last 3 Characters
+
+function fourCopy (str){
+    let newString = "";
+    let lastSub = str.slice(str.length-3, str.length);
+    newString = lastSub + lastSub +lastSub+ lastSub;
+    return newString;
 }
 
-let result = replaceChar("jaha$g&i*r");
+let result = fourCopy("Alom")
 console.log(result)
