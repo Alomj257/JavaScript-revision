@@ -405,3 +405,11 @@
 
 // let result = capFirst("i am jahangir alom");
 // console.log(result)
+
+
+// Sort Letters Alphabetically in String
+
+let string = "jahangir";
+let strArr = string.split("");
+let newSting = strArr.sort().join("")
+console.log(newSting)
