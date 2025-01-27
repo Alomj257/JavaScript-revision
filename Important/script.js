@@ -332,25 +332,25 @@
 // Write a JavaScript program to check from two given integers whether one of them is 8 or their sum or difference is 8.  
 
 
-// function condiTwo(a,b){
-//     if(a === 8 || b === 8){
-//         return true;
-//     }else{
-//         if(a>b){
-//             if((a-b) === 8){
-//                 return true
-//             }else{
-//                 return false
-//             }
-//         }else{
-//             if((b-a) === 8){
-//                 return true
-//             }else{
-//                 return false
-//             }
-//         }
-//     }
-// }
+function condiTwo(a,b){
+    if(a === 8 || b === 8){
+        return true;
+    }else{
+        if(a>b){
+            if((a-b) === 8){
+                return true
+            }else{
+                return false
+            }
+        }else{
+            if((b-a) === 8){
+                return true
+            }else{
+                return false
+            }
+        }
+    }
+}
 
-// let result = condiTwo(30,38);
-// console.log(result)
+let result = condiTwo(8,38);
+console.log(result)
