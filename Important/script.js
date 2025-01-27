@@ -251,12 +251,32 @@
 
 
 // Practice 
-let str = "Aasia Bano jahangir"
-let strf = str.slice(0,str.length-4)
-let str1 = str.slice(str.length-4,str.length);
-let str2 = "";
-for(let i = str1.length-1; i>=0; i--){
-    str2 = str2 + str1.charAt(i)
+// let str = "Aasia Bano jahangir"
+// let strf = str.slice(0,str.length-4)
+// let str1 = str.slice(str.length-4,str.length);
+// let str2 = "";
+// for(let i = str1.length-1; i>=0; i--){
+//     str2 = str2 + str1.charAt(i)
+// }
+// let result = str2.concat(strf);
+// console.log(result)
+
+
+
+//Check a given string contains 2 to 4 numbers of a specified character
+
+function findChar(str, s) {
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str.charAt(i) === s) {
+            count++;
+        }
+    }
+    return count >= 2 && count <= 4;
 }
-let result = str2.concat(strf);
-console.log(result)
+
+let result = findChar("IamJahangir", "a");
+console.log(result);
+
+let result1 = findChar("imihdhjf", "y");
+console.log(result1);
