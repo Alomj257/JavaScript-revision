@@ -483,6 +483,15 @@
 
 // Remove First and Last Characters in String
 
-let str = "Jahangir";
-let newSting = str.slice(1,str.length-1);
-console.log(newSting)
+// let str = "Jahangir";
+// let newSting = str.slice(1,str.length-1);
+// console.log(newSting)
+
+
+// 61. Concatenate Two Strings Without First Character
+
+let str1 = "Jahangir";
+let str2 = "Aasia";
+
+let result = str1.slice(1,str1.length).concat(str2.slice(1,str2.length));
+console.log(result);
