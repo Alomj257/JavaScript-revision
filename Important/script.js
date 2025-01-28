@@ -574,15 +574,33 @@
 
 // 71. Check if 1 is First/Last Element in Array
 
-const checkFist = (arr) => {
-    for(let i =0; i<arr.length; i++){
-        if(arr[0] === 1 && arr[arr.length -1] === 1){
-            return "Found 1 is First and last element of array";
+// const checkFist = (arr) => {
+//     for(let i =0; i<arr.length; i++){
+//         if(arr[0] === 1 && arr[arr.length -1] === 1){
+//             return "Found 1 is First and last element of array";
+//         }else{
+//             return "Not found"
+//         }
+//     }
+// }
+
+// let Array = [1,3,4,2,43,1]
+// console.log(checkFist(Array));
+
+
+
+// 72. Check if First and Last Elements Are Same
+
+const checkFirstAndLastSame = (arr) => {
+    for(let i =0; i<arr.length ; i++){
+        if(arr[0] === arr[arr.length-1]){
+            return true;
         }else{
-            return "Not found"
+            return false;
         }
     }
 }
 
-let Array = [1,3,4,2,43,1]
-console.log(checkFist(Array));
+let array = [23,4,5,678,27]
+let result = checkFirstAndLastSame(array);
+console.log(result);
