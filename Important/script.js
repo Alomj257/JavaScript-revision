@@ -499,8 +499,43 @@
 
 // 62. Move Last 3 Characters to Start of String
 
-let str = "Jahangir";
-let lastStr = str.slice(str.length-3, str.length);
-let firstStr = str.slice(0,str.length-3);
-let result = lastStr.concat(firstStr);
-console.log(result);
+// let str = "Jahangir";
+// let lastStr = str.slice(str.length-3, str.length);
+// let firstStr = str.slice(0,str.length-3);
+// let result = lastStr.concat(firstStr);
+// console.log(result);
+
+
+
+// 64. Concatenate Strings with Matching Length
+
+// const conTwoString = (str1, str2) => {
+//     let str1Length = str1.length;
+//     let str2Length = str2.length;
+
+//     if(str1Length === str2Length){
+//         return str1.concat(str2);
+//     }else{
+//         return "Length of two string are not matched"
+//     }
+// }
+
+// let result = conTwoString("Jahangir", "Tahmiddd");
+// console.log(result);
+
+
+
+// 65. Check if String Ends with ' Script'
+
+
+// const endScript = (str) => {
+//     let endString = str.slice(str.length-6, str.length);
+//     if(endString === "Script"){
+//         return "Yes, string ends with Script"
+//     }else{
+//         return "No, string is not ends with Script"
+//     }
+// }
+
+// let result = endScript("i am javaScript");
+// console.log(result);
