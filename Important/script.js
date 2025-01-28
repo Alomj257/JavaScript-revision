@@ -591,16 +591,40 @@
 
 // 72. Check if First and Last Elements Are Same
 
-const checkFirstAndLastSame = (arr) => {
+// const checkFirstAndLastSame = (arr) => {
+//     for(let i =0; i<arr.length ; i++){
+//         if(arr[0] === arr[arr.length-1]){
+//             return true;
+//         }else{
+//             return false;
+//         }
+//     }
+// }
+
+// let array = [23,4,5,678,27]
+// let result = checkFirstAndLastSame(array);
+// console.log(result);
+
+
+// 74. Set All Elements to Largest of First/Last in Array
+
+const setLargestArray = (arr) => {
+    let max;
     for(let i =0; i<arr.length ; i++){
-        if(arr[0] === arr[arr.length-1]){
-            return true;
+        if(arr[0] > arr[arr.length-1]){
+            max = arr[0];
         }else{
-            return false;
+            max = arr[arr.length-1]
         }
     }
+    
+    let newArr = [];
+    for(let i =0; i<arr.length; i++){
+        newArr.push(max)
+    }
+    return newArr;
 }
 
-let array = [23,4,5,678,27]
-let result = checkFirstAndLastSame(array);
+let array = [20,40,50];
+let result = setLargestArray(array);
 console.log(result);
