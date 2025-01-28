@@ -557,15 +557,32 @@
 
 // 69. Sum of 3 Elements in Array (Length 3)
 
-const sumArr = (arr) => {
-    let sum =0;
-    console.log(arr)
+// const sumArr = (arr) => {
+//     let sum =0;
+//     console.log(arr)
+//     for(let i =0; i<arr.length; i++){
+//         sum = sum + arr[i];
+//     }
+//     return sum;
+// }
+
+// let array = [2,3,4,5,6,7,8,98,98]
+// let result = sumArr(array);
+// console.log(result)
+
+
+
+// 71. Check if 1 is First/Last Element in Array
+
+const checkFist = (arr) => {
     for(let i =0; i<arr.length; i++){
-        sum = sum + arr[i];
+        if(arr[0] === 1 && arr[arr.length -1] === 1){
+            return "Found 1 is First and last element of array";
+        }else{
+            return "Not found"
+        }
     }
-    return sum;
 }
 
-let array = [2,3,4,5,6,7,8,98,98]
-let result = sumArr(array);
-console.log(result)
+let Array = [1,3,4,2,43,1]
+console.log(checkFist(Array));
