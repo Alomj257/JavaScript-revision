@@ -608,23 +608,39 @@
 
 // 74. Set All Elements to Largest of First/Last in Array
 
-const setLargestArray = (arr) => {
-    let max;
-    for(let i =0; i<arr.length ; i++){
-        if(arr[0] > arr[arr.length-1]){
-            max = arr[0];
-        }else{
-            max = arr[arr.length-1]
-        }
-    }
+// const setLargestArray = (arr) => {
+//     let max;
+//     for(let i =0; i<arr.length ; i++){
+//         if(arr[0] > arr[arr.length-1]){
+//             max = arr[0];
+//         }else{
+//             max = arr[arr.length-1]
+//         }
+//     }
     
-    let newArr = [];
-    for(let i =0; i<arr.length; i++){
-        newArr.push(max)
-    }
-    return newArr;
-}
+//     let newArr = [];
+//     for(let i =0; i<arr.length; i++){
+//         newArr.push(max)
+//     }
+//     return newArr;
+// }
 
-let array = [20,40,50];
-let result = setLargestArray(array);
-console.log(result);
+// let array = [20,40,50];
+// let result = setLargestArray(array);
+// console.log(result);
+
+
+// 76. Create Array with First/Last Elements from Array
+
+let arr = [34,56,67,78,90];
+
+let newArr = [];
+for(let i =0; i<arr.length; i++){
+    if(i === 0){
+        newArr.push(arr[0])
+    }
+    if(i === arr.length-1){
+        newArr.push(arr[arr.length-1])
+    }
+}
+console.log(newArr);
