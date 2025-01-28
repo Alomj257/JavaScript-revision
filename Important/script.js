@@ -543,13 +543,29 @@
 
 // 66. Return City Name if Starts with 'Los' or 'New' 
 
-const cityName = (str) => {
-    if(str.slice(0,3) === "Los" || str.slice(0,3) === "New"){
-        return str;
-    }else{
-        return "Not started with los and new";
+// const cityName = (str) => {
+//     if(str.slice(0,3) === "Los" || str.slice(0,3) === "New"){
+//         return str;
+//     }else{
+//         return "Not started with los and new";
+//     }
+// }
+
+// let result = cityName("Los Angle");
+// console.log(result)
+
+
+// 69. Sum of 3 Elements in Array (Length 3)
+
+const sumArr = (arr) => {
+    let sum =0;
+    console.log(arr)
+    for(let i =0; i<arr.length; i++){
+        sum = sum + arr[i];
     }
+    return sum;
 }
 
-let result = cityName("Los Angle");
+let array = [2,3,4,5,6,7,8,98,98]
+let result = sumArr(array);
 console.log(result)
