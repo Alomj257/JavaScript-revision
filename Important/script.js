@@ -539,3 +539,17 @@
 
 // let result = endScript("i am javaScript");
 // console.log(result);
+
+
+// 66. Return City Name if Starts with 'Los' or 'New' 
+
+const cityName = (str) => {
+    if(str.slice(0,3) === "Los" || str.slice(0,3) === "New"){
+        return str;
+    }else{
+        return "Not started with los and new";
+    }
+}
+
+let result = cityName("Los Angle");
+console.log(result)
