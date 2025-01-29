@@ -632,15 +632,34 @@
 
 // 76. Create Array with First/Last Elements from Array
 
-let arr = [34,56,67,78,90];
+// let arr = [34,56,67,78,90];
 
-let newArr = [];
-for(let i =0; i<arr.length; i++){
-    if(i === 0){
-        newArr.push(arr[0])
+// let newArr = [];
+// for(let i =0; i<arr.length; i++){
+//     if(i === 0){
+//         newArr.push(arr[0])
+//     }
+//     if(i === arr.length-1){
+//         newArr.push(arr[arr.length-1])
+//     }
+// }
+// console.log(newArr);
+
+
+
+// 83. Find Longest String in Array
+
+
+const longestArray = (arr) => {
+    let longest = "";
+    for(let i=0; i< arr.length ; i++){
+        if(arr[i].length > longest.length){
+            longest = arr[i];
+        }
     }
-    if(i === arr.length-1){
-        newArr.push(arr[arr.length-1])
-    }
+    return longest;
 }
-console.log(newArr);
+
+let array = ["Alom", "Jahangir", "Tahmid", "Hassan ali muhammed", "Alom ji"]
+let result = longestArray(array);
+console.log(result);
