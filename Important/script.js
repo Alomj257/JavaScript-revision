@@ -723,16 +723,23 @@
 
 // Return smallest string from array
 
-const smallestString = (arr) => {
-    let smallString = arr[0];
-    for(let i = 0; i<arr.length; i++){
-        if(arr[i].length < smallString.length){
-            smallString = arr[i];
-        }
-    }
-    return smallString;
-}
+// const smallestString = (arr) => {
+//     let smallString = arr[0];
+//     for(let i = 0; i<arr.length; i++){
+//         if(arr[i].length < smallString.length){
+//             smallString = arr[i];
+//         }
+//     }
+//     return smallString;
+// }
 
-let array = ["aa", "Alom", "Tahmid", "a"];
-let result = smallestString(array);
+// let array = ["aa", "Alom", "Tahmid", "a"];
+// let result = smallestString(array);
+// console.log(result)
+
+const smallString = (arr) => {
+    return arr.reduce((min, current) => min.length < current.length ? min: current);
+}
+let array = ["ajhgdjfa", "Alom", "Tahmid", "a44444"];
+let result = smallString(array);
 console.log(result)
