@@ -650,16 +650,34 @@
 // 83. Find Longest String in Array
 
 
-const longestArray = (arr) => {
-    let longest = "";
-    for(let i=0; i< arr.length ; i++){
-        if(arr[i].length > longest.length){
-            longest = arr[i];
+// const longestArray = (arr) => {
+//     let longest = "";
+//     for(let i=0; i< arr.length ; i++){
+//         if(arr[i].length > longest.length){
+//             longest = arr[i];
+//         }
+//     }
+//     return longest;
+// }
+
+// let array = ["Alom", "Jahangir", "Tahmid", "Hassan ali muhammed", "Alom ji"]
+// let result = longestArray(array);
+// console.log(result);
+
+
+
+// 83. Find Longest Number in Array
+
+function largestArray(arr){
+    let max = arr[0];
+    for(let val of arr){
+        if(val>max){
+            max = val;
         }
     }
-    return longest;
+    return max;
 }
 
-let array = ["Alom", "Jahangir", "Tahmid", "Hassan ali muhammed", "Alom ji"]
-let result = longestArray(array);
+let array = [2,34,54,93, 1,23,87,45];
+let result = largestArray(array);
 console.log(result);
