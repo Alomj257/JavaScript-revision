@@ -737,9 +737,24 @@
 // let result = smallestString(array);
 // console.log(result)
 
-const smallString = (arr) => {
-    return arr.reduce((min, current) => min.length < current.length ? min: current);
+// const smallString = (arr) => {
+//     return arr.reduce((min, current) => min.length < current.length ? min: current);
+// }
+// let array = ["ajhgdjfa", "Alom", "Tahmid", "a44444"];
+// let result = smallString(array);
+// console.log(result)
+
+
+// JavaScript: Find the maximum possible sum of some of its k consecutive numbers of a specified array of positive integers
+
+const conjuSum = (arr) => {
+    let sum =0;
+    for(let i =0; i<arr.length-1; i++){
+        sum = sum + (arr[i]+arr[i+1])
+    }
+    return sum;
 }
-let array = ["ajhgdjfa", "Alom", "Tahmid", "a44444"];
-let result = smallString(array);
-console.log(result)
+
+let array = [1,2,3,4];
+let result = conjuSum(array);
+console.log(result);
