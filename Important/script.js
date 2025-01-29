@@ -668,16 +668,43 @@
 
 // 83. Find Longest Number in Array
 
-function largestArray(arr){
-    let max = arr[0];
-    for(let val of arr){
-        if(val>max){
-            max = val;
-        }
-    }
-    return max;
-}
+// function largestArray(arr){
+//     let max = arr[0];
+//     for(let val of arr){
+//         if(val>max){
+//             max = val;
+//         }
+//     }
+//     return max;
+// }
 
-let array = [2,34,54,93, 1,23,87,45];
-let result = largestArray(array);
+// let array = [2,34,54,93, 1,23,87,45];
+// let result = largestArray(array);
+// console.log(result);
+
+
+// Another aproach
+
+
+// let largestArray = (arr) => {
+//     let max = arr[0];
+//     for(let i=1; i<arr.length; i++){
+//         if(arr[i] > max){
+//             max = arr[i];
+//         }
+//     }
+//     return max;
+// }
+
+// let array = [354,4765,983978,5865876,1,2,3,4,5,65]
+// console.log(largestArray(array));
+
+
+// reduce function
+
+const largestNumber = (array) => {
+    return array.reduce((max,current) => current > max ? current : max)
+}
+let arr = [354,4765,983978,9,1,2,3,4,56666666666666,65]
+let result = largestNumber(arr);
 console.log(result);
