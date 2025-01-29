@@ -719,3 +719,20 @@
 // let array = [4,3,6,7,-8,1,4,0];
 // let result = minNumber(array);
 // console.log(result);
+
+
+// Return smallest string from array
+
+const smallestString = (arr) => {
+    let smallString = arr[0];
+    for(let i = 0; i<arr.length; i++){
+        if(arr[i].length < smallString.length){
+            smallString = arr[i];
+        }
+    }
+    return smallString;
+}
+
+let array = ["aa", "Alom", "Tahmid", "a"];
+let result = smallestString(array);
+console.log(result)
