@@ -702,9 +702,20 @@
 
 // reduce function
 
-const largestNumber = (array) => {
-    return array.reduce((max,current) => current > max ? current : max)
-}
-let arr = [354,4765,983978,9,1,2,3,4,56666666666666,65]
-let result = largestNumber(arr);
-console.log(result);
+// const largestNumber = (array) => {
+//     return array.reduce((max,current) => current > max ? current : max)
+// }
+// let arr = [354,4765,983978,9,1,2,3,4,56666666666666,65]
+// let result = largestNumber(arr);
+// console.log(result);
+
+
+// Min number from array
+
+// const minNumber = (arr) => {
+//     return arr.reduce((min, current) => current < min ? current :min);
+// }
+
+// let array = [4,3,6,7,-8,1,4,0];
+// let result = minNumber(array);
+// console.log(result);
