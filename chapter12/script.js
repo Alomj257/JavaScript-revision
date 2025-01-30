@@ -16,11 +16,29 @@
 
 
 // Callbacks
-function sum(a,b){
-    console.log(a+b)
-}
-function calculotor(a,b, sumCallback){
-    sumCallback(a,b)
+// function sum(a,b){
+//     console.log(a+b)
+// }
+// function calculotor(a,b, sumCallback){
+//     sumCallback(a,b)
+// }
+
+// calculotor(1,2, sum)
+
+
+// Callback hell
+
+function getData(dataId, getNextData){ //2 sec
+    setTimeout(() => {
+        console.log("data", dataId);
+        if(getNextData){
+            getNextData();
+        }
+    }, 2000)
 }
 
-calculotor(1,2, sum)
+getData(1, ()=> {
+    getData(2, () => {
+        getData(3)
+    });
+})
