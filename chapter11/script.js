@@ -54,31 +54,82 @@
 // let obj = new Chlid();
 // console.log(obj.hello())
 
-class Person {
-    constructor(species){
-        this.species = species;
+// class Person {
+//     constructor(species){
+//         this.species = species;
+//     }
+//     eat(){
+//         console.log("Eat")
+//     }
+//     sleep(){
+//         console.log("Sleep")
+//     }
+//     work(){
+//         console.log("Do nothing")
+//     }
+// }
+
+// class Engineer extends Person{
+//     work(){
+//         console.log("Solve problem and build something")
+//     }
+// }
+
+// let p1 = new Person("Human");
+// console.log(p1)
+
+// let jahangir = new Engineer();
+// console.log(jahangir.work())
+// console.log(jahangir.eat())
+// console.log(jahangir.sleep())
+
+
+// Super Keywords
+
+// class Person {
+//     constructor(species) {
+//         this.species = species;
+//     }
+//     eat() {
+//         console.log("Eat")
+//     }
+//     sleep() {
+//         console.log("Sleep")
+//     }
+//     work() {
+//         console.log("Do nothing")
+//     }
+// }
+
+// class Engineer extends Person {
+//     constructor(branch) {
+//         super();
+//         this.branch = branch;
+//     }
+//     work() {
+//         console.log("Solve problem and build something")
+//     }
+// }
+
+// let e1 = new Engineer ("ECE");
+// console.log(e1)
+
+
+
+
+// Practice 1
+
+let data = "Secret information"
+class User {
+    constructor(name,email){
+        this.name = name;
+        this.email = email;
     }
-    eat(){
-        console.log("Eat")
-    }
-    sleep(){
-        console.log("Sleep")
-    }
-    work(){
-        console.log("Do nothing")
+
+    viewData(){
+        console.log(data);
     }
 }
 
-class Engineer extends Person{
-    work(){
-        console.log("Solve problem and build something")
-    }
-}
-
-let p1 = new Person("Human");
-console.log(p1)
-
-let jahangir = new Engineer();
-console.log(jahangir.work())
-console.log(jahangir.eat())
-console.log(jahangir.sleep())
+let user1 = new User("Jahangir", "alomj257@gmail.com")
+console.log(user1.viewData())
