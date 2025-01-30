@@ -19,6 +19,11 @@
 // Classes in JavaScript
 
 class ToyotaCar{
+    constructor(brand, milage) {
+        console.log("Creating new object")
+        this.brand = brand;
+        this.milage = milage;
+    }
     start(){
         console.log("Start")
     }
@@ -26,13 +31,9 @@ class ToyotaCar{
     stop() {
         console.log("Stop")
     }
-
-    setBrand(brand){
-        this.brandName = brand;
-    }
 }
 
-let fortuner = new ToyotaCar();
-fortuner.setBrand("fortuner")
-let lexus = new ToyotaCar();
-lexus.setBrand("Lexus")
+let fortuner = new ToyotaCar("fortuner", 10);
+console.log(fortuner);
+let lexus = new ToyotaCar("Lexus", 20);
+console.log(lexus)
