@@ -63,18 +63,47 @@
 // console.log(result)
 
 
-const getPromise = () => {
+// const getPromise = () => {
+//     return new Promise((resolve, reject) => {
+//         console.log("I am a promise")
+//         // resolve("Sucess")
+//         reject("Network error")
+//     })
+// }
+
+// let promise = getPromise();
+// promise.then(() => {
+//     console.log("Promise fullfiled")
+// });
+// promise.catch((error) => {
+//     console.log(error)
+// })
+
+
+
+function asyncFunc1() {
     return new Promise((resolve, reject) => {
-        console.log("I am a promise")
-        // resolve("Sucess")
-        reject("Network error")
+        setTimeout(() => {
+            console.log("Some data 1");
+            resolve("Sucess");
+        }, 4000)
     })
 }
 
-let promise = getPromise();
-promise.then(() => {
-    console.log("Promise fullfiled")
-});
-promise.catch((error) => {
-    console.log(error)
+function asyncFunc2() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("Some data 2");
+            resolve("Sucess");
+        }, 4000)
+    })
+}
+
+console.log("Fetcjing data 1")
+asyncFunc1().then((res)=> {
+    console.log("Fetching data 2")
+    asyncFunc2().then((res)=> {
+    })
+}).catch((err) =>{
+    console.log(err)
 })
