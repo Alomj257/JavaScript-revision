@@ -28,17 +28,36 @@
 
 // Callback hell
 
-function getData(dataId, getNextData){ //2 sec
-    setTimeout(() => {
-        console.log("data", dataId);
-        if(getNextData){
-            getNextData();
-        }
-    }, 2000)
-}
+// function getData(dataId, getNextData){ //2 sec
+//     setTimeout(() => {
+//         console.log("data", dataId);
+//         if(getNextData){
+//             getNextData();
+//         }
+//     }, 2000)
+// }
 
-getData(1, ()=> {
-    getData(2, () => {
-        getData(3)
+// getData(1, ()=> {
+//     getData(2, () => {
+//         getData(3)
+//     });
+// })
+
+
+// Promises
+
+// let promise = new Promise((resolve, reject) => {
+//     console.log("I am a promise");
+//     resolve("Resoved")
+// })
+
+function getData(dataId) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log(dataId);
+            resolve("Success");
+        }, 2000);
     });
-})
+}
+let result = getData(123)
+console.log(result)
