@@ -51,13 +51,30 @@
 //     resolve("Resoved")
 // })
 
-function getData(dataId) {
+// function getData(dataId) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log(dataId);
+//             resolve("Success");
+//         }, 2000);
+//     });
+// }
+// let result = getData(123)
+// console.log(result)
+
+
+const getPromise = () => {
     return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            console.log(dataId);
-            resolve("Success");
-        }, 2000);
-    });
+        console.log("I am a promise")
+        // resolve("Sucess")
+        reject("Network error")
+    })
 }
-let result = getData(123)
-console.log(result)
+
+let promise = getPromise();
+promise.then(() => {
+    console.log("Promise fullfiled")
+});
+promise.catch((error) => {
+    console.log(error)
+})
