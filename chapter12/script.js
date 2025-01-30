@@ -81,29 +81,62 @@
 
 
 
-function asyncFunc1() {
+// function asyncFunc1() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log("Some data 1");
+//             resolve("Sucess");
+//         }, 4000)
+//     })
+// }
+
+// function asyncFunc2() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log("Some data 2");
+//             resolve("Sucess");
+//         }, 4000)
+//     })
+// }
+
+// console.log("Fetcjing data 1")
+// asyncFunc1().then((res)=> {
+//     console.log("Fetching data 2")
+//     asyncFunc2().then((res)=> {
+//     })
+// }).catch((err) =>{
+//     console.log(err)
+// })
+
+
+// Promise chain 
+
+const getData = (dataId) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            console.log("Some data 1");
-            resolve("Sucess");
-        }, 4000)
+            console.log(dataId);
+            resolve("Sucess")
+        }, 2000)
     })
 }
 
-function asyncFunc2() {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            console.log("Some data 2");
-            resolve("Sucess");
-        }, 4000)
-    })
-}
+// getData(123).then((res) => {
+//     console.log(res);
+//     getData(2).then((res)=> {
+//         console.log(res);
+//         getData(3).then((res) => {
+//             console.log(res)
+//         })
+//     })
+// })
 
-console.log("Fetcjing data 1")
-asyncFunc1().then((res)=> {
-    console.log("Fetching data 2")
-    asyncFunc2().then((res)=> {
-    })
-}).catch((err) =>{
-    console.log(err)
+//Another
+getData(123).then((res) => {
+    return getData(2);
 })
+    .then((res) => {
+        return getData(3);
+    })
+    .then((res) => {
+        console.log(res)
+    })
