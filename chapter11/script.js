@@ -131,5 +131,20 @@ class User {
     }
 }
 
+class Admin extends User{
+    constructor(name, email){
+        super(name, email)
+    }
+    editData(){
+        data = "Some new value"
+    }
+}
+
 let user1 = new User("Jahangir", "alomj257@gmail.com")
+console.log(user1)
 console.log(user1.viewData())
+
+let admin1 = new Admin("Admin", "admin@gmail.com");
+console.log(admin1);
+console.log(admin1.editData())
+console.log(admin1.viewData())
