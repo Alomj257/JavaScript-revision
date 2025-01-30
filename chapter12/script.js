@@ -111,14 +111,14 @@
 
 // Promise chain 
 
-const getData = (dataId) => {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            console.log(dataId);
-            resolve("Sucess")
-        }, 2000)
-    })
-}
+// const getData = (dataId) => {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(()=> {
+//             console.log(dataId);
+//             resolve("Sucess")
+//         }, 2000)
+//     })
+// }
 
 // getData(123).then((res) => {
 //     console.log(res);
@@ -131,12 +131,37 @@ const getData = (dataId) => {
 // })
 
 //Another
-getData(123).then((res) => {
-    return getData(2);
-})
-    .then((res) => {
-        return getData(3);
-    })
-    .then((res) => {
-        console.log(res)
-    })
+// getData(123).then((res) => {
+//     return getData(2);
+// })
+// .then((res)=> {
+//     return getData(3);
+// })
+// .then((res) => {
+//     console.log(res)
+// })
+
+
+
+// Async and await
+
+// async function hello() {
+//     console.log("Hello")
+// }
+// hello();
+
+function api() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("Weather data");
+            resolve(200);
+        }, 2000)
+    });
+}
+
+async function getData(){
+    await api();
+    await api();
+}
+
+getData();
