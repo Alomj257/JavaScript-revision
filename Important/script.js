@@ -764,13 +764,26 @@
 // 80. Swap First and Last Elements in Array
 
 
-const swapElement = (arr) => {
-    let temp = arr[0];
-    arr[0] = arr[arr.length -1];
-    arr[arr.length -1] = temp;
-    return arr;
+// const swapElement = (arr) => {
+//     let temp = arr[0];
+//     arr[0] = arr[arr.length -1];
+//     arr[arr.length -1] = temp;
+//     return arr;
+// }
+
+// let array = [1,2,3,4];
+// let result = swapElement(array);
+// console.log(result)
+
+// 81. Add Two Digits in a Two-Digit Number
+
+
+
+const addTowNumber = (n) => {
+    let x = Math.floor(n/10);
+    let y = n %10;
+    return x + y;
 }
 
-let array = [1,2,3,4];
-let result = swapElement(array);
-console.log(result)
+let result = addTowNumber(99);
+console.log(result);
