@@ -758,3 +758,19 @@
 // let array = [1,2,3,4];
 // let result = conjuSum(array);
 // console.log(result);
+
+
+
+// 80. Swap First and Last Elements in Array
+
+
+const swapElement = (arr) => {
+    let temp = arr[0];
+    arr[0] = arr[arr.length -1];
+    arr[arr.length -1] = temp;
+    return arr;
+}
+
+let array = [1,2,3,4];
+let result = swapElement(array);
+console.log(result)
