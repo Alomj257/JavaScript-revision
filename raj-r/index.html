@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Registration</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <h2>Student Registration form</h2>
+            <form id="studentForm">
+                <input type="hidden" id="editIndex">
+                <label for="fullName">Enter Full Name:</label>
+                <input type="text" id="fullName" required>
+    
+                <label for="email">Enter your email:</label>
+                <input type="email" id="email" required>
+    
+                <label for="phone">Enter your phone:</label>
+                <input type="tel" id="phone" required>
+    
+                <label>Gender</label>
+                <div class="gender">
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="male">Male</label>
+    
+                    <input type="radio" id="female" name="gender" value="Female" required>
+                    <label for="female">Female</label>
+                </div>
+    
+                <label for="course">Course:</label>
+                <select id="course" required>
+                    <option value="" disabled selected>Select course</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="B.Sc">B.Sc</option>
+                    <option value="B.Com">B.Com</option>
+                    <option value="MBA">MBA</option>
+                    <option value="MCA">MCA</option>
+                </select>
+    
+                <label for="address">Address:</label>
+                <textarea id="address" rows="3" required></textarea>
+    
+                <button type="submit">Register</button>
+            </form>
+    
+            <!-- <h3>Submitted Details</h3>
+            <div id="output"></div> -->
+        </div>
+    
+        <div>
+            <h3>Student List</h3>
+            <table id="studentTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Gender</th>
+                        <th>Course</th>
+                        <th>Address</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="studentList"></tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
